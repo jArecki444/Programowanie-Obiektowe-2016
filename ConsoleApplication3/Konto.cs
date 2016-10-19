@@ -15,5 +15,19 @@ namespace ConsoleApplication3
         saldoKoncowe=ile-saldoPoczatkowe;
         return "Przelano! zostalo ci: "+ saldoKoncowe;
     }
+        public double Wplata(double ile)
+        {
+            saldoKoncowe += ile;
+            return saldoKoncowe;
+        }
+        public double Wyplata(double ile)
+        {
+            saldoKoncowe -= ile;
+            return saldoKoncowe;
+        }
+         public Konto() //Tworzenie konstruktora 
+        {
+            saldoPoczatkowe = 100;
+        }
     }
 }
